@@ -17,7 +17,7 @@
 		String userpw = request.getParameter("userPW");
 		String useremail = request.getParameter("userEmail");
 		
-		String sql = "INSERT INTO members values(?,?,?)";
+		String sql = "INSERT INTO members(userid,userpw,useremail) values(?,?,?)";
 		
 		String driverName = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/jsp_project";
