@@ -14,7 +14,7 @@
 			<td>
 				<form action="login.jsp">
 					<input type="submit" value="◀ 관리자 접속하기">
-				</form>
+				</form> 
 			</td>
 			<td>
 				<form action="signup.jsp">
