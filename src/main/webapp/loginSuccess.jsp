@@ -43,7 +43,7 @@
 			//}
 			// count = 1이면 로그인 성공, 0이면 로그인 실패
 			if (rs.next()) { //rs내에 반환된 레코드가 1개 존재하면 true->로그인 성공
-				session.setAttribute("admin", "yes");
+				session.setAttribute("admin", "yes"); // 로그인 성공시에 저장되는 값
 				out.println("새로운 세션 생성 성공!"+"<br>");
 				out.println("관리자 [" + adminid + "]님이 입장하셨습니다.");
 			} else {

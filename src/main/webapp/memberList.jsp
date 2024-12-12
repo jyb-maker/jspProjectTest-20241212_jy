@@ -11,6 +11,11 @@
 <title>회원 리스트</title>
 </head>
 <body>
+	<%
+		if(session.getAttribute("admin") == null) {   // 정보 누출 방지를 위해 로그인 페이지로 이동 
+			response.sendRedirect("login.jsp");
+		}
+	%>
 	<h2>회원 리스트</h2>
 	<hr>
 	<%
